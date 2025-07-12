@@ -14,18 +14,30 @@
   border: 1px solid #808080;
 }
 
+#datetime-picker:hover {
+  border-color: #000000;
+}
+
+#datetime-picker:focus {
+  outline: none;
+  border-color: #4e75ff;
+}
+
 button[data-start] {
   width: 75px;
   height: 40px;
   padding: 8px 16px;
   font-size: 16px;
-  background-color: #4e75ff;
-  color: #ffff;
+  font-weight: 500;
+  font-style: Medium;
+  line-height: 24px;
+  letter-spacing: 4%;
+  background-color: #cfcfcf;
+  color: #989898;
   border-radius: 8px;
   border: none;
   cursor: pointer;
   gap: 10px;
-  opacity: 1;
 }
 
 button[data-start]:hover:not(:disabled) {
@@ -33,33 +45,12 @@ button[data-start]:hover:not(:disabled) {
   color: #fff;
 }
 
-button[data-start]:disabled {
-  background-color: #cfcfcf;
-  color: #888;
-}
-
-.flatpickr-day.today:not(.selected) {
-  border: 1px solid #bdbdbd;
-  color: #333;
-  border-radius: 50%;
-}
-/* .flatpickr-day:hover,
-.flatpickr-day:focus {
-  background-color: #e6e6e6;
-  border-radius: 50%;
-}
-
-.flatpickr-day.selected,
-.flatpickr-day.startRange,
-.flatpickr-day.endRange,
-.flatpickr-day.inRange {
-  background-color: transparent !important;
-  border: 1px solid #4e75ff;
-} */
-
 .timer {
+  width: 346px;
+  height: 72px;
   display: flex;
   align-content: center;
+  justify-content: space-between;
   gap: 24px;
 }
 
@@ -82,4 +73,9 @@ button[data-start]:disabled {
   font-size: 16px;
   line-height: 24px;
   color: #2e2f42;
+}
+
+.flatpickr-day.today:not(.selected) {
+  border: 1px solid #4e75ff;
+  border-radius: 50%;
 }
